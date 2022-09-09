@@ -13,12 +13,13 @@ body,html {
 .keys {
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-  }
-  
-  .key {
+}
+
+.key {
     border: .4rem solid black;
     border-radius: .5rem;
     margin: 1rem;
@@ -30,23 +31,29 @@ body,html {
     color: white;
     background: rgba(0,0,0,0.4);
     text-shadow: 0 0 .5rem black;
-  }
-  
-  .playing {
+}
+
+.playing {
     transform: scale(1.1);
     border-color: #B9848C;
     box-shadow: 0 0 1rem #B9848C;
-  }
-  
-  kbd {
+}
+
+kbd {
     display: block;
     font-size: 4rem;
-  }
-  
-  .sound {
+}
+
+.sound {
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: #ffc600;
-  }
+}
+
+@media screen and (max-width: 600px) {
+    .key {
+        width: 7rem;
+    }
+}
   
